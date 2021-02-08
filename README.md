@@ -54,8 +54,8 @@ informações sobre o estabelecimento/local do estacionamento.
 
 👨🏾‍✈️ **Motorista**
 
-- [ ]  nome
-- [ ]  CNH
+- [x]  nome
+- [x]  *CNH*
 
 **🏢 Estabelecimento**
 
@@ -78,25 +78,25 @@ informações sobre o estabelecimento/local do estacionamento.
 
 🛵 **Veículo**
 
+- [ ]  motorista
 - [ ]  placa
     - [ ]  validação de placa
 - [ ]  categoria
-- [ ]  motorista
 - [ ]  valor de marcado: consultar na API Fipe
 - [ ]  horário de entrada
 - [ ]  horário de saída
 
 ## Complementares
 
-📍 **Endereço (interface)**
+📍 **Endereço**
 
 - [ ]  logradouro
 - [ ]  cep
 - [ ]  número
 
-💳 **CNH (interface)**
+💳 **CNH**
 
-- [ ]  nome
-- [ ]  categoria
-- [ ]  número
-    - [ ]  validação: apenas inserções que sejam coerentes com a numeração da *CNH*
+- [x]  nome
+- [x]  categoria
+- [x]  número
+    - [x]  validação: apenas inserções que sejam coerentes com a numeração da *CNH*
