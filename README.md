@@ -45,3 +45,58 @@ informações sobre o estabelecimento/local do estacionamento.
 ## 🔥 Diferencial
 
 - Integração com a [API de consultas da tabela FIPE](https://fipeapi.appspot.com/)
+
+---
+
+# 🚧 To-do
+
+## Principais
+
+👨🏾‍✈️ **Motorista**
+
+- [ ]  nome
+- [ ]  CNH
+
+**🏢 Estabelecimento**
+
+- [ ]  *Endereço*
+- [ ]  quantidade de funcionários
+- [ ]  tem vallet?
+    - [ ]  quantidade de vallets
+- [ ]  quantidade de vagas
+    - [ ]  disponíveis/ocupadas
+- [ ]  tempo médio de permanência
+- [ ]  veículos estacionados <*Lista>*
+
+👷🏾‍♂️ **Funcionário**
+
+- [ ]  nome
+- [ ]  tem habilitação?
+    - [ ]  *CNH*
+    - [ ]  é vallet
+- [ ]  tempo de experiência na empresa
+
+🛵 **Veículo**
+
+- [ ]  placa
+    - [ ]  validação de placa
+- [ ]  categoria
+- [ ]  motorista
+- [ ]  valor de marcado: consultar na API Fipe
+- [ ]  horário de entrada
+- [ ]  horário de saída
+
+## Complementares
+
+📍 **Endereço (interface)**
+
+- [ ]  logradouro
+- [ ]  cep
+- [ ]  número
+
+💳 **CNH (interface)**
+
+- [ ]  nome
+- [ ]  categoria
+- [ ]  número
+    - [ ]  validação: apenas inserções que sejam coerentes com a numeração da *CNH*
