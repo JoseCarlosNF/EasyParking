@@ -78,7 +78,7 @@ informações sobre o estabelecimento/local do estacionamento.
 
 - [ ]  motorista
 - [ ]  placa
-    - [ ]  validação de placa
+    - [ ]  validação de placa (Regex)
 - [ ]  categoria
 - [ ]  valor de marcado: consultar na API Fipe
 - [ ]  horário de entrada
@@ -95,6 +95,9 @@ informações sobre o estabelecimento/local do estacionamento.
 
 📍 **Endereço**
 
-- [ ]  logradouro
-- [ ]  cep
-- [ ]  número
+- [x]  Integração com API de CEPs
+    - [x]  cep
+    - [x]  logradouro
+    - [x]  número
+    - [x]  bairro
+    - [x]  localidade

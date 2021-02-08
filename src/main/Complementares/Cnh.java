@@ -18,7 +18,6 @@ class Cnh {
     private boolean validarNumero( String numero)
     {
         Pattern padrao = Pattern.compile("[0-9]{11}");
-        Matcher encontrado = padrao.matcher(numero);
-        return encontrado.matches();
+        return padrao.matcher(numero).matches();
     }
 }
