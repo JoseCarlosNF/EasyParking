@@ -57,6 +57,12 @@ informações sobre o estabelecimento/local do estacionamento.
 - [x]  nome
 - [x]  *CNH*
 
+👷🏾‍♂️ **Funcionário**
+
+- [x]  nome
+- [x]  tem habilitação?
+    - [x]  *CNH*
+
 **🏢 Estabelecimento**
 
 - [ ]  *Endereço*
@@ -67,14 +73,6 @@ informações sobre o estabelecimento/local do estacionamento.
     - [ ]  disponíveis/ocupadas
 - [ ]  tempo médio de permanência
 - [ ]  veículos estacionados <*Lista>*
-
-👷🏾‍♂️ **Funcionário**
-
-- [ ]  nome
-- [ ]  tem habilitação?
-    - [ ]  *CNH*
-    - [ ]  é vallet
-- [ ]  tempo de experiência na empresa
 
 🛵 **Veículo**
 
@@ -88,15 +86,15 @@ informações sobre o estabelecimento/local do estacionamento.
 
 ## Complementares
 
-📍 **Endereço**
-
-- [ ]  logradouro
-- [ ]  cep
-- [ ]  número
-
 💳 **CNH**
 
 - [x]  nome
 - [x]  categoria
 - [x]  número
     - [x]  validação: apenas inserções que sejam coerentes com a numeração da *CNH*
+
+📍 **Endereço**
+
+- [ ]  logradouro
+- [ ]  cep
+- [ ]  número
