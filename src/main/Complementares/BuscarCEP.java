@@ -1,11 +1,9 @@
-import jdk.jshell.execution.Util;
+import com.google.gson.Gson;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import com.google.gson.Gson;
 
 public class BuscarCEP {
     static String webService = "https://viacep.com.br/ws/";
@@ -21,7 +19,7 @@ public class BuscarCEP {
                 throw new RuntimeException("HTTP error code : " + conexao.getResponseCode());
 
             BufferedReader resposta = new BufferedReader(new InputStreamReader((conexao.getInputStream())));
-            String jsonEmString = converteJsonEmString(resposta);
+            String jsonEmString = Util.converterJsonEmString(resposta);
 
             Gson gson = new Gson();
 
@@ -29,13 +27,5 @@ public class BuscarCEP {
         } catch (Exception e) {
             throw new Exception("ERRO: " + e);
         }
-    }
-
-    public static String converteJsonEmString(BufferedReader buffereReader) throws IOException {
-        String resposta, jsonEmString = "";
-        while ((resposta = buffereReader.readLine()) != null) {
-            jsonEmString += resposta;
-        }
-        return jsonEmString;
     }
 }
