@@ -23,4 +23,24 @@ class FuncionarioTest {
         assertEquals("Brasília", func1.getEndereco().getLocalidade());
     }
 
+
+    @Test
+    void setEndereco() throws Exception {
+        func1.setEndereco("66075-110","123");
+        assertEquals("Rua Augusto Corrêa", func1.getEndereco().getLogradouro());
+        assertEquals("Guamá", func1.getEndereco().getBairro());
+        assertEquals("Belém", func1.getEndereco().getLocalidade());
+        assertEquals("123", func1.getEndereco().getNumero());
+    }
+
+    @Test
+    void getHabilitado() {
+        assertFalse(func1.getHabilitado());
+    }
+
+
+    @Test
+    void getVallet() {
+        assertFalse(func1.getVallet());
+    }
 }

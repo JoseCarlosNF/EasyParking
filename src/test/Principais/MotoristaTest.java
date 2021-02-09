@@ -6,15 +6,15 @@ class MotoristaTest {
     Motorista motora = new Motorista("Genivaldo", "D", "12345678910");
 
     @Test
-    void nomeDoMotora()
+    void getNome()
     { assertEquals("Genivaldo", motora.getNome()); }
 
     @Test
-    void categoriaMotora()
+    void getCategoria()
     { assertEquals("D", motora.getCategoria()); }
 
     @Test
-    void numeroValidoCNH()
+    void getNumeroCNH()
     { assertEquals("12345678910", motora.getNumeroCNH()); }
 
     @Test
@@ -23,4 +23,5 @@ class MotoristaTest {
         Motorista motora2 = new Motorista("Genivaldo", "D", "1234567891");
         assertEquals(null, motora2.getNumeroCNH());
     }
+
 }

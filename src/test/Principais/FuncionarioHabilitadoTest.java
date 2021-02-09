@@ -4,21 +4,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FuncionarioHabilitadoTest {
     FuncionarioHabilitado funcHab1 = new FuncionarioHabilitado("Acerlindo Trindade",
+            "67130123",
+            "123",
             "B",
-            "12345678910");
+            "12345678910",
+            true);
+
+    FuncionarioHabilitadoTest() throws Exception {
+    }
+
 
     @Test
     void getNome() {
         assertEquals("Acerlindo Trindade", funcHab1.getNome());
     }
 
-    @Test
-    void getCategoria() {
-        assertEquals("B", funcHab1.getCategoria());
-    }
 
     @Test
-    void getNumeroCNH() {
-        assertEquals("12345678910", funcHab1.getNumeroCNH());
+    void getCategoria() {
+        assertEquals("B", funcHab1.getCnh().categoria);
     }
+
 }
