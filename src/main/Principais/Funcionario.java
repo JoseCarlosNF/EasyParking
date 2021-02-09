@@ -2,13 +2,17 @@
 class Funcionario{
     private String nome;
     private Endereco endereco;
-    private String numero;
+    private String numeroEndereco;
+    protected Boolean isHabilitado;
+    protected Boolean isVallet;
 
-    public Funcionario(String nome, String cep, String numero) throws Exception {
+    public Funcionario(String nome, String cep, String numeroEndereco) throws Exception {
         this.nome = nome;
         this.endereco = BuscarCEP.buscaEnderecoPeloCEP(cep);
-        this.endereco.setNumero(numero);
-        this.numero = numero;
+        this.endereco.setNumero(numeroEndereco);
+        this.numeroEndereco = numeroEndereco;
+        this.isHabilitado = false;
+        this.isVallet = false;
     }
 
     public Endereco getEndereco(){
@@ -22,5 +26,13 @@ class Funcionario{
 
     public String getNome() {
         return nome;
+    }
+
+    public Boolean getHabilitado() {
+        return isHabilitado;
+    }
+
+    public Boolean getVallet() {
+        return isVallet;
     }
 }
