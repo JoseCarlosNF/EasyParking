@@ -63,26 +63,29 @@ informações sobre o estabelecimento/local do estacionamento.
 - [x]  tem habilitação?
     - [x]  *CNH*
 
-**🏢 Estabelecimento**
-
-- [ ]  *Endereço*
-- [ ]  quantidade de funcionários
-- [ ]  tem vallet?
-    - [ ]  quantidade de vallets
-- [ ]  quantidade de vagas
-    - [ ]  disponíveis/ocupadas
-- [ ]  tempo médio de permanência
-- [ ]  veículos estacionados <*Lista>*
-
 🛵 **Veículo**
 
-- [ ]  motorista
-- [ ]  placa
+- [x]  *Motorista*
+- [x]  placa
     - [ ]  validação de placa (Regex)
-- [ ]  categoria
-- [ ]  valor de marcado: consultar na API Fipe
-- [ ]  horário de entrada
-- [ ]  horário de saída
+- [x]  categoria
+- [x]  valor de marcado: consultar na API Fipe
+- [x]  horário de entrada
+- [x]  horário de saída
+
+**🏢 Estabelecimento**
+
+- [x]  *Endereço*
+- [x]  *Funcionarios <Lista>*
+    - [x]  quantidade
+    - [x]  tem vallet?
+        - [x]  quantidade de vallets
+- [x]  quantidade de vagas
+    - [x]  disponíveis/ocupadas
+- [ ]  tempo médio de permanência
+- [x]  veículos estacionados <*Lista>*
+    - [x]  ocupar vaga
+    - [x]  desocupar vaga
 
 ## Complementares
 
