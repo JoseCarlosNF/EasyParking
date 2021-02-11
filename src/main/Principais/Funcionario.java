@@ -2,7 +2,6 @@
 class Funcionario{
     private String nome;
     private Endereco endereco;
-    private String numeroEndereco;
     protected Boolean isHabilitado;
     protected Boolean isVallet;
 
@@ -10,7 +9,6 @@ class Funcionario{
         this.nome = nome;
         this.endereco = BuscarCEP.buscaEnderecoPeloCEP(cep);
         this.endereco.setNumero(numeroEndereco);
-        this.numeroEndereco = numeroEndereco;
         this.isHabilitado = false;
         this.isVallet = false;
     }
