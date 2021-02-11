@@ -2,9 +2,17 @@
 
 Basicamente, um sistema de controle para estacionamentos.
 
+## Tecnologias utilizadas
+
+- Java
+    - Junit 5
+    - [Google gson](https://github.com/google/gson)
+- [API Fipe](https://fipeapi.appspot.com/)
+- [API ViaCep](https://viacep.com.br/)
+
 ## Como a POO foi abordada
 
-### 🛵 Veículo
+### 🛵 **Veículo**
 
 diversas características que podem ser utilizadas. No caso específico de um estacionamento, algumas delas são:
 
@@ -18,7 +26,7 @@ diversas características que podem ser utilizadas. No caso específico de um es
 - horário de entrada
 - horário de saída
 
-### 👷🏾‍♂️ Funcionário
+### 👷🏾‍♂️ **Funcionário**
 
 informações sobre os funcionários*.*
 
@@ -29,7 +37,7 @@ informações sobre os funcionários*.*
     - é *vallet?*
 - tempo de experiência na empresa
 
-### 🏢 Estabelecimento
+### 🏢 **Estabelecimento**
 
 informações sobre o estabelecimento/local do estacionamento.
 
@@ -45,62 +53,4 @@ informações sobre o estabelecimento/local do estacionamento.
 ## 🔥 Diferencial
 
 - Integração com a [API de consultas da tabela FIPE](https://fipeapi.appspot.com/)
-
----
-
-# 🚧 To-do
-
-## Principais
-
-👨🏾‍✈️ **Motorista**
-
-- [x]  nome
-- [x]  *CNH*
-
-👷🏾‍♂️ **Funcionário**
-
-- [x]  nome
-- [x]  tem habilitação?
-    - [x]  *CNH*
-
-🛵 **Veículo**
-
-- [x]  *Motorista*
-- [x]  placa
-    - [ ]  validação de placa (Regex)
-- [x]  categoria
-- [x]  valor de marcado: consultar na API Fipe
-- [x]  horário de entrada
-- [x]  horário de saída
-
-**🏢 Estabelecimento**
-
-- [x]  *Endereço*
-- [x]  *Funcionarios <Lista>*
-    - [x]  quantidade
-    - [x]  tem vallet?
-        - [x]  quantidade de vallets
-- [x]  quantidade de vagas
-    - [x]  disponíveis/ocupadas
-- [ ]  tempo médio de permanência
-- [x]  veículos estacionados <*Lista>*
-    - [x]  ocupar vaga
-    - [x]  desocupar vaga
-
-## Complementares
-
-💳 **CNH**
-
-- [x]  nome
-- [x]  categoria
-- [x]  número
-    - [x]  validação: apenas inserções que sejam coerentes com a numeração da *CNH*
-
-📍 **Endereço**
-
-- [x]  Integração com API de CEPs
-    - [x]  cep
-    - [x]  logradouro
-    - [x]  número
-    - [x]  bairro
-    - [x]  localidade
+- Integração com [APi de CEPs](https://viacep.com.br/)
